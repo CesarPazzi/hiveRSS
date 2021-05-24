@@ -1,5 +1,3 @@
-<title>hiveRSS</title>
-
 ![HiveRSS Logo](./hiverss2.png)
 
 # HiveRSS [https://hiverss.com](https://www.hiverss.com)
