@@ -10,6 +10,18 @@ Go to (almost) any Hive page with a content stream, and replace 'hive.blog' with
 
 https://hive.blog/trending/hive -> https://hive***rss***.com/trending/hive
 
+## Installation
+
+git clone https://github.com/hiveuprss/hiveRSS
+
+cd hiveRSS
+
+npm install
+
+npm start
+
+Open browser on http://localhost:3000
+
 ## Usage Examples
 
 ### User Feed

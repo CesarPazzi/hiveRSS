@@ -12,7 +12,7 @@
   "scripts": {
     "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install",
     "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;",
-    "start": "export NODE_ENV=production && npm run build && node lib/app.js",
+    "start": "set NODE_ENV=production && npm run build && node lib/app.js",
     "build": "babel src --out-dir lib --plugins=babel-plugin-transform-runtime,transform-function-bind,transform-regenerator",
     "debug": "nodemon --exec babel-node .",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,6 +30,7 @@
     "npm-watch": "^0.7.0"
   },
   "dependencies": {
+    "@babel/node": "^7.14.2",
     "@ecency/render-helper": "^2.1.2",
     "@hiveio/hive-js": "^0.8.4",
     "babel-polyfill": "^6.26.0",
